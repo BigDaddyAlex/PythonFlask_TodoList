@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    {% block head %}{% endblock %}
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    {% block body %}{% endblock %}   
+        <div class="h1as">{% block head %}{% endblock %}</div>
+        <div class='h2as'>{% block body %}{% endblock %}</div>
 </body>
 </html>
